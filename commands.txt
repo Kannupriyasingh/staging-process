@@ -10,7 +10,19 @@ git merge release
 
 git push origin {same-branch-name-which-specified-above-line-no-7}
 
-/// make the alpha tag from git ///
+/// make the alpha tag from git 
+
+go to your branch 
+
+go to compare option on the top 
+
+see that required changes are done
+
+go to tags option on the top
+
+then to make tag follow below command
+
+///
 
 git tag {tag-name-which-is-made-in-git}
 
