@@ -1,0 +1,39 @@
+/// if any changes is not commited from previous branch then have to commit those changes first or stash those changes ////
+
+git checkout release
+
+git pull origin release
+
+git checkout {branch-name-for-which-staging-to-be-perfomed}
+
+git merge release
+
+git push origin {same-branch-name-which-specified-above-line-no-7}
+
+/// make the alpha tag from git ///
+
+git tag {tag-name-which-is-made-in-git}
+
+git push origin {tag-name-which-is-used-in-line-no-15}
+
+/// after that in jenkins 
+
+
+  search for "service1-deploy-staging"
+  
+  then go to "build with parameters" (find this option in left side)
+  
+  then change tag-name with your tag-name
+  
+  change git-name with the git-name which you are working in
+  
+  maven-repo-path remain same
+  
+  change name-space with "nl-services"
+  
+  
+///
+  
+  
+  
+  
